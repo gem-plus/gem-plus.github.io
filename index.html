@@ -10,7 +10,12 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -18,6 +23,10 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="mobile-contact-info">
+                    <p>Email: <a href="mailto:alas.dev@example.com">alas.dev@example.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                </li>
             </ul>
         </nav>
     </header>
@@ -55,24 +64,32 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <img src="img/project1-thumbnail.jpg" alt="Predictive Maintenance System">
-                <h3>Predictive Maintenance System</h3>
-                <p>Developed a predictive maintenance system for industrial equipment using machine learning algorithms to predict failures before they occur.</p>
+                <div class="project-content">
+                    <h3>Predictive Maintenance System</h3>
+                    <p>Developed a predictive maintenance system for industrial equipment using machine learning algorithms to predict failures before they occur.</p>
+                </div>
+                <img src="img/project1-thumbnail.jpg" alt="Predictive Maintenance System" class="project-img">
             </div>
             <div class="project">
-                <img src="img/project2-thumbnail.jpg" alt="Sentiment Analysis of Social Media Posts">
-                <h3>Sentiment Analysis of Social Media Posts</h3>
-                <p>Created a sentiment analysis tool to analyze and classify the sentiment of social media posts in real-time.</p>
+                <div class="project-content">
+                    <h3>Sentiment Analysis of Social Media Posts</h3>
+                    <p>Created a sentiment analysis tool to analyze and classify the sentiment of social media posts in real-time.</p>
+                </div>
+                <img src="img/project2-thumbnail.jpg" alt="Sentiment Analysis of Social Media Posts" class="project-img">
             </div>
             <div class="project">
-                <img src="img/project3-thumbnail.jpg" alt="Handwritten Digit Recognition">
-                <h3>Handwritten Digit Recognition</h3>
-                <p>Built a convolutional neural network (CNN) model to recognize handwritten digits with high accuracy.</p>
+                <div class="project-content">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p>Built a convolutional neural network (CNN) model to recognize handwritten digits with high accuracy.</p>
+                </div>
+                <img src="img/project3-thumbnail.jpg" alt="Handwritten Digit Recognition" class="project-img">
             </div>
             <div class="project">
-                <img src="img/project4-thumbnail.jpg" alt="Personal Finance Management App">
-                <h3>Personal Finance Management App</h3>
-                <p>Developed a personal finance management application to help users track expenses and manage budgets efficiently.</p>
+                <div class="project-content">
+                    <h3>Personal Finance Management App</h3>
+                    <p>Developed a personal finance management application to help users track expenses and manage budgets efficiently.</p>
+                </div>
+                <img src="img/project4-thumbnail.jpg" alt="Personal Finance Management App" class="project-img">
             </div>
         </div>
     </section>
@@ -109,5 +126,7 @@
     <footer>
         <p>&copy; 2024 Alas Dev. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
